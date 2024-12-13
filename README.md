@@ -6,7 +6,7 @@ We are interested in classifying which microbial species in mice were transmitte
 ## Title
 Tracking Gut Microbial Transmission in Co-housed Mice Following Antibiotic Treatment
 
-# Study Design
+## Study Design
 ![Study Design](Figures/figure_1_study_design.png?raw=true "Title")
 
 ## Group Members
