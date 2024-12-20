@@ -79,4 +79,3 @@ dependencies:
   - xorg-libxdmcp=1.1.5=hb9d3cd8_0
   - xz=5.2.6=h166bdaf_0
   - zstd=1.5.6=ha6fb4c9_0
-prefix: /home/awc93/miniconda3/envs/sourmash

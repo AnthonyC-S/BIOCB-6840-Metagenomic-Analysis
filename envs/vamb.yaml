@@ -65,4 +65,3 @@ dependencies:
       - triton==2.3.1
       - typing-extensions==4.12.2
       - vamb==4.1.4.dev144+g95f1155
-prefix: /home/awc93/miniconda3/envs/vamb

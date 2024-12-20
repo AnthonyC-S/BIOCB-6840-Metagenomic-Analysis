@@ -1,5 +1,7 @@
 # path to fastq data files and path to metaspades package in biohpc
-directory="/local1/workdir1/lej52/abx_recovery_metagenomics/processed_data"
+directory="/workdir/abx_recovery_metagenomics/processed_data"
+
+# Used SPAdes version 4.0.0, can be downloaded here: https://ablab.github.io/spades/installation.html
 spades_package="/programs/spades/bin/spades.py"
 
 # for loop to execute metaspades for all sequence ID folders in the base directory folder

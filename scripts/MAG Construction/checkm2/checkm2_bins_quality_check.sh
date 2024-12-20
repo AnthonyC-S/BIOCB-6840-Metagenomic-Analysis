@@ -8,7 +8,7 @@
 export CHECKM2DB=/workdir/refdbs/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd
 
 # specify directory containing bins from all samples
-binned_assemblies_dir=/workdir1/lej52/abx_recovery_metagenomics/taxvamb_output/full_run/filtered_bins
+binned_assemblies_dir=/workdir/taxvamb_output/full_run/filtered_bins
 cd "$binned_assemblies_dir"
 
 # loop through each sample folder and execute checkm2 for all the bins in that folder
