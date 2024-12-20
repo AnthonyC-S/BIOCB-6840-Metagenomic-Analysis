@@ -1,10 +1,8 @@
-# NOTE: this analysis was done using the Brito Lab server
-
 # activate conda environment checkm2
 
+# export the diamond database for checkm2 
+# NOTE: the database must be downloaded beforehand from https://zenodo.org/records/4626519/files/uniref100.KO.v1.dmnd.gz?download=1
 
-# export the diamond database for checkm2
-# NOTE: the database must be downloaded beforehand
 export CHECKM2DB=/workdir/refdbs/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd
 
 # specify directory containing bins from all samples
