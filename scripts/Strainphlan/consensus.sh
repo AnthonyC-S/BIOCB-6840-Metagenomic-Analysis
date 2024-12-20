@@ -1,13 +1,3 @@
-#!/bin/bash
-#SBATCH --job-name=bowtie2      	     # Job name
-#SBATCH --mail-type=FAIL            	 # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=yc2785@cornell.edu # Where to send mail
-#SBATCH --ntasks=1                   	 # Run a single task
-#SBATCH --mem=100gb                    # Job Memory
-#SBATCH --time=12:00:00             	 # Time limit hrs:min:sec
-#SBATCH --output=%j.log		    	       # Standard output and error log
-
-
 # Step 1: Loop through all .json.bz2 files in the consensus_markers folder
 for json_file in ./consensus_markers/*.json.bz2; do
     # Extract the base name (seqid number) from the json filename
