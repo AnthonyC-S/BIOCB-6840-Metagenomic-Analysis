@@ -70,3 +70,5 @@ All needed input files should now be created.
 2. Download and unpack reference genome from here: [CM2 DIAMOND Reference Database Uniref100/KO](https://zenodo.org/records/4626519/files/uniref100.KO.v1.dmnd.gz?download=1).
 3. Update path pointing to reference database in script, [checkm2_bins_quality_check.sh](scripts/MAG%20Construction/checkm2/checkm2_bins_quality_check.sh).
 4. Run script [checkm2_bins_quality_check.sh](scripts/MAG%20Construction/checkm2/checkm2_bins_quality_check.sh).
+5. Create a conda environment sourmash with [sourmash.yaml](envs/sourmash.yaml) and activate, note this environment has all the necessary packages to create CheckM2 plots as well.
+6. Create plots with `python checkm2_plots.py` with file [checkm2_plots.py](scripts/MAG%20Construction/checkm2/checkm2_plots.py).
