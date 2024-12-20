@@ -58,7 +58,7 @@ All needed input files should now be created.
 2. Modify any of the directories to the correct path.
 3. Run script [taxvamb_array_job.sh](scripts/MAG%20Construction/taxvamb/taxvamb_array_job.sh).
 
-## Group and Filter Bins to 500,000 bp or more
+### Group and Filter Bins to 500,000 bp or more
 
 1. Create a conda environment biopython with [biopython.yaml](envs/biopython.yaml) and activate.
 2. Group the bins with `python perform_binning.py` with file, [perform_binning.py](scripts/MAG%20Construction/checkm2/perform_binning.py).
