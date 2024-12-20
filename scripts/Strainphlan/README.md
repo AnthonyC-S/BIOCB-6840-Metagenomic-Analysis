@@ -11,3 +11,5 @@ To construct the phylogenetic tree for only the TAC and JAX mice before treatmen
 Use the "hclust2.py" script to generate the top 30 abundant taxonomy profile heatmap for samples of interests.
 
 To generate the top 30 abundant taxonomy profile heatmap for only the TAC and JAX mice samples before treatment, use the "filter.py" script the filter for those samples and generate the "filtered_merged_abundance_table_species.txt" used in hclust2.
+
+To rename the "{seq_id}.json.bz2" files to "{seq_id}_{real_name}.json.bz2" for easy reading in the following phylogenetic tree, run the script "rename.py"before proceeding with step 4).
