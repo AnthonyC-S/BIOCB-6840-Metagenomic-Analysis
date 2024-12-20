@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# Activate conda env biopython
+
 from Bio import SeqIO
 import argparse
 import os

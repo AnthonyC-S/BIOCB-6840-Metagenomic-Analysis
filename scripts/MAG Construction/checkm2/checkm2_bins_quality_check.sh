@@ -1,7 +1,7 @@
 # NOTE: this analysis was done using the Brito Lab server
 
-# activate conda environment in Cornell biohpc
-source /programs/miniconda3/bin/activate checkm2
+# activate conda environment checkm2
+
 
 # export the diamond database for checkm2
 # NOTE: the database must be downloaded beforehand

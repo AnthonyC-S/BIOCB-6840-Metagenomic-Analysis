@@ -7,7 +7,7 @@ We are interested in classifying which microbial species in mice were transmitte
 Tracking Gut Microbial Transmission in Co-housed Mice Following Antibiotic Treatment
 
 ## Study Design
-![Study Design](Figures/figure_1_study_design.png?raw=true "Title")
+An experimental study was performed on mice to investigate the effects of co-housing (close social interactions) on gut microbiome recovery post-antibiotic perturbation. To ensure different base microbiomes, the recipient mice were acquired from Taconic Biosciences (TAC) and the donors from Jackson Laboratory (JAX). The acquired dataset consists of time-series DNA microbiome samples taken at days –7, 0, 7, 14, 21, 29, and 38 for recipients, and days –7, 0, and 7 for donors. Day 0 is the start of a seven-day broad spectrum antibiotic course and co-housing started on day 8. For each sample, Illumina short-read shotgun metagenomic sequencing (150bp, ~6m reads/sample) was done. This analysis will focus on days -7, 0, and 38.
 
 ## Group Members
 - Yang Cheng (yc2785, BIOCB 6840)
