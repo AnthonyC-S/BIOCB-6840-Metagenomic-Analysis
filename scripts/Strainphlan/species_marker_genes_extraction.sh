@@ -1,12 +1,3 @@
-#!/bin/bash
-#SBATCH --job-name=bowtie2      	     # Job name
-#SBATCH --mail-type=FAIL            	 # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=yc2785@cornell.edu # Where to send mail
-#SBATCH --ntasks=1                   	 # Run a single task
-#SBATCH --mem=8gb                    # Job Memory
-#SBATCH --time=12:00:00             	 # Time limit hrs:min:sec
-#SBATCH --output=%j.log		    	       # Standard output and error log
-
 
 # List of species to process
 species_list=(
