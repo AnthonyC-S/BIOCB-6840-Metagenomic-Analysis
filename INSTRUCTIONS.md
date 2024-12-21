@@ -83,6 +83,7 @@ All needed input files should now be created.
 2. Create a conda environment gtdbtk with [gtdbtk.yaml](envs/gtdbtk.yaml) and activate.
 3. Set the GTDBTK_DATA_PATH envrionment variable by running: `conda env config vars set GTDBTK_DATA_PATH="/path/to/target/db"`.
 4. Update database path and run script [gtdbtk_bins_taxonomy_assignment.sh](scripts/MAG%20Construction/gtdbtk/gtdbtk_bins_taxonomy_assignment.sh).
+5. To plot figures, use R or RStudio and open and run [gtdbtk_output_plots.R](scripts/MAG Construction/gtdbtk/gtdbtk_output_plots.R).
 
 
 ## StrainPhlAn and MetaPhlAn Analysis
