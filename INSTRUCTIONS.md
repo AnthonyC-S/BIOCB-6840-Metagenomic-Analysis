@@ -98,10 +98,10 @@ To construct the phylogenetic tree, please follow the following instruction:
 
 To find all the markers that are shared by more than 10 sample. run the script [consensus.sh](scripts/Strainphlan/consensus.sh). With that we will be able to identify the top species that are shared by more than 10 samples and have the most marker genes. The species filtered and used in script `species_marker_genes_extraction.sh` are the top species that has at least 100 marker genes shared by more than 10 samples.
 
-To construct the phylogenetic tree for only the TAC and JAX mice before treatment, replace the script `strainphlan.sh` to [donor_receipient_before.sh](scripts/Strainphlan/donor_receipient_before.sh) in step 4.
+To construct the phylogenetic tree for only the TAC and JAX mice before treatment, replace the script `strainphlan.sh` to [donor_receipient_before.sh](scripts/Strainphlan/donor_receipient_before.sh) in step 5.
 
 Run [hclust2.sh](scripts/Strainphlan/hclust2.sh) to generate the top 30 abundant taxonomy profile heatmap for samples of interests.
 
 To generate the top 30 abundant taxonomy profile heatmap for only the TAC and JAX mice samples before treatment, run `python filter.py` with the file [filter.py](scripts/Strainphlan/filter.py) to filter for those samples and generate the `filtered_merged_abundance_table_species.txt` used in `hclust2.sh`.
 
-To rename the `{seq_id}.json.bz2` files to `{seq_id}_{real_name}.json.bz2` for easy reading in the following phylogenetic tree, run `python rename.py` with the file [rename.py](scripts/Strainphlan/rename.py) before proceeding with step 4.
+To rename the `{seq_id}.json.bz2` files to `{seq_id}_{real_name}.json.bz2` for easy reading in the following phylogenetic tree, run `python rename.py` with the file [rename.py](scripts/Strainphlan/rename.py) before proceeding with step 5.
