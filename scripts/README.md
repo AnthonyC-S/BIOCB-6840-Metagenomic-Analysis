@@ -2,6 +2,6 @@
 
 Primarily used the high-performance computing cluster at Cornell, [https://biohpc.cornell.edu](https://biohpc.cornell.edu).
 
-Minor changes would likely be necessary depending on your software environment.
+The conda envrionments were created in a linux-64 plateform. See [envs/README.md](https://github.com/AnthonyC-S/BIOCB-6840-Metagenomic-Analysis/blob/main/envs/README.md) for more information.
 
-Please refer to folder Strainphlan for codes used for Strainphlan analysis.
+Minor changes would likely be necessary depending on your software and hardware environment.

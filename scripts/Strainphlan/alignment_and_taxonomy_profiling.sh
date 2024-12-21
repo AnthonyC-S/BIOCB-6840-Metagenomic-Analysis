@@ -3,10 +3,10 @@ mkdir -p sams
 mkdir -p bowtie2
 mkdir -p profiles
 
-# Loop over all seqid folders in the three specified directories
-for dir in /workdir/awc93/abx-meta/reads_postqc/before_treatment/TAC/seqid_* \
-          /workdir/awc93/abx-meta/reads_postqc/before_treatment/JAX/seqid_* \
-          /workdir/awc93/abx-meta/reads_postqc/after_cohousing/TAC/seqid_*; do
+# Loop over all seqid folders in the three specified directories, may need to alter paths.
+for dir in /workdir/reads_postqc/before_treatment/TAC/seqid_* \
+          /workdir/reads_postqc/before_treatment/JAX/seqid_* \
+          /workdir/reads_postqc/after_cohousing/TAC/seqid_*; do
     # Extract the seqid number from the folder name
     seqid=$(basename ${dir})
 

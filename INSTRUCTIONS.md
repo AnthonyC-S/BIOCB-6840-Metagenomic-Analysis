@@ -72,3 +72,35 @@ All needed input files should now be created.
 4. Run script [checkm2_bins_quality_check.sh](scripts/MAG%20Construction/checkm2/checkm2_bins_quality_check.sh).
 5. Create a conda environment sourmash with [sourmash.yaml](envs/sourmash.yaml) and activate, note this environment has all the necessary packages to create CheckM2 plots as well.
 6. Create plots with `python checkm2_plots.py` with file [checkm2_plots.py](scripts/MAG%20Construction/checkm2/checkm2_plots.py).
+
+### Obtain Taxonomy with GTDB-Tk
+
+1. Download GTDB-Tk database with wget and then unpack tar file. See installation instructions [here](https://ecogenomics.github.io/GTDBTk/installing/index.html) if you have any trouble.
+
+    `wget https://data.gtdb.ecogenomic.org/releases/latest/auxillary_files/gtdbtk_package/full_package/gtdbtk_data.tar.gz`
+
+    `tar xvfz gtdbtk_v2_data.tar.gz`
+2. Create a conda environment gtdbtk with [gtdbtk.yaml](envs/gtdbtk.yaml) and activate.
+3. Set the GTDBTK_DATA_PATH envrionment variable by running: `conda env config vars set GTDBTK_DATA_PATH="/path/to/target/db"`.
+4. Update database path and run script [gtdbtk_bins_taxonomy_assignment.sh](scripts/MAG Construction/gtdbtk/gtdbtk_bins_taxonomy_assignment.sh).
+
+
+## StrainPhlAn and MetaPhlAn Analysis
+
+To construct the phylogenetic tree, please follow the following instruction:
+
+1. Create a conda environment metaphlan with [metaphlan.yaml](envs/metaphlan.yaml) and activate.
+2. Run [alignment_and_taxonomy_profiling.sh](scripts/Strainphlan/alignment_and_taxonomy_profiling.sh) to align the metagenomic data of each sample to the marker gene database using metaphlan and generate the taxonomy profile.
+3. Run [consensus_sequence_extraction.sh](scripts/Strainphlan/consensus_sequence_extraction.sh) to extract the consensus sequence of marker genes for each samples.
+4. Run [species_marker_genes_extraction.sh](scripts/Strainphlan/species_marker_genes_extraction.sh) to extract from the MetaPhlAn database, the maker genes for each species of interest. The script extracted the marker gene for all the species that has at least 100 marker genes shared by more than 10 samples. In total 14 species were identified.
+5. Run script [strainphlan.sh](scripts/Strainphlan/strainphlan.sh) to construct the phylogenetic tree for each species of interest across all the samples that pass the marker gene filter. Note, the script showed an example for species SGB7041.
+
+To find all the markers that are shared by more than 10 sample. run the script [consensus.sh](scripts/Strainphlan/consensus.sh). With that we will be able to identify the top species that are shared by more than 10 samples and have the most marker genes. The species filtered and used in script `species_marker_genes_extraction.sh` are the top species that has at least 100 marker genes shared by more than 10 samples.
+
+To construct the phylogenetic tree for only the TAC and JAX mice before treatment, replace the script `strainphlan.sh` to [donor_receipient_before.sh](scripts/Strainphlan/donor_receipient_before.sh) in step 4.
+
+Run [hclust2.sh](scripts/Strainphlan/hclust2.sh) to generate the top 30 abundant taxonomy profile heatmap for samples of interests.
+
+To generate the top 30 abundant taxonomy profile heatmap for only the TAC and JAX mice samples before treatment, run `python filter.py` with the file [filter.py](scripts/Strainphlan/filter.py) to filter for those samples and generate the `filtered_merged_abundance_table_species.txt` used in `hclust2.sh`.
+
+To rename the `{seq_id}.json.bz2` files to `{seq_id}_{real_name}.json.bz2` for easy reading in the following phylogenetic tree, run `python rename.py` with the file [rename.py](scripts/Strainphlan/rename.py) before proceeding with step 4.

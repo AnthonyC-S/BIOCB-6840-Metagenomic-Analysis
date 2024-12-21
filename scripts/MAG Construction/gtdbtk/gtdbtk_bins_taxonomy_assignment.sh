@@ -10,9 +10,7 @@
 # Set GTDBTK_DATA_PATH to new reference db directory, for example:
 # export GTDBTK_DATA_PATH=/workdir/release207_v2
 
-# run code as instructed. the command is:
-# gtdbtk
-
+# activate the conda env gtdbtk
 
 # Specify directory containing bins from all samples
 
